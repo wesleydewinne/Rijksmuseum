@@ -1,0 +1,76 @@
+@import '../../../styles/variables.css';
+
+.basic-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* Varianten */
+.btn-default {
+    background-color: var(--color-background-gray);
+    color: #111827;
+}
+
+.btn-default:hover {
+    background-color: #d1d5db;
+}
+
+.btn-primary {
+    background-color: var(--color-info, #2563eb);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-info);
+}
+
+.btn-danger {
+    background-color: #b91c1c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+
+.btn-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-icon {
+    display: inline-flex;
+    margin: 0 0.5rem;
+}
+
+.btn-spinner {
+    font-style: italic;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.btn-spinner::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
