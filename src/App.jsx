@@ -13,7 +13,7 @@ import CollectionPage from './pages/collectionPage/CollectionPage.jsx';
 import DetailPage from './pages/detailPage/DetailPage.jsx';
 import NotFoundPage from './pages/notFoundPage/NotFoundPage.jsx';
 import FavoritesPage from './pages/favoritesPage/FavoritesPage.jsx';
-import ApiTest from "./pages/Test/ApiTest.jsx";
+import ApiWakeUp from "./pages/wakeUp/ApiWakeUp.jsx";
 
 function App() {
     const location = useLocation();
@@ -21,7 +21,7 @@ function App() {
 
     return (
         <div className="layout">
-            <ApiTest />
+            <ApiWakeUp />
 
             <Header />
 
