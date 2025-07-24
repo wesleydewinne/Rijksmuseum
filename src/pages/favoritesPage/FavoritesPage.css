@@ -1,0 +1,30 @@
+@import '../../styles/variables.css';
+
+.favorites-title {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-heading), serif;
+    text-align: center;
+}
+
+.collection-controls-favorites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 20px;
+}
+
+.no-favorites-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.no-favorites-message p {
+    font-size: var(--font-size-xl);
+    color: var(--color-text, #333);
+    margin: 0;
+}

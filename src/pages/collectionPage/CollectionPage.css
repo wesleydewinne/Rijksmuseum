@@ -1,0 +1,66 @@
+@import "../../styles/variables.css";
+
+.collection-title {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-heading), serif;
+    text-align: center;
+}
+
+.collection-controls {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 20px;
+
+}
+
+.collection-controls.bottom {
+    justify-content: center;
+}
+
+.collection-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.collection-list > * {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.login-tooltip {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-text);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: var(--font-size-sm);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.collection-card:hover .login-tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 992px) {
+    .collection-controls {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
