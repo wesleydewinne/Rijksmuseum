@@ -1,0 +1,136 @@
+.profile-header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.profile-card {
+    flex: 1;
+    max-width: 320px;
+    background: linear-gradient(135deg, #f0f0f0 0%, #d0eaff 100%);
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 5px dashed #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card .profile-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #a0c4ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    margin: 0 auto 1rem;
+    border: 5px dashed #fff;
+}
+
+.profile-card p.profile-email {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #444;
+}
+
+.profile-info {
+    flex: 2;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.profile-info__paragraph {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.profile-info__list {
+    list-style-type: disc;
+    margin: 1rem 0 1.5rem 2rem;
+    padding-left: 0;
+}
+
+.profile-info__list-item {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+
+@media (min-width: 769px) {
+    .profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    .profile-card {
+        position: sticky;
+        top: 50%;
+        transform: translateY(-50%);
+        align-self: flex-start;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html, body {
+        height: auto;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 0 1rem;
+    }
+
+    .profile-card,
+    .profile-info {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
