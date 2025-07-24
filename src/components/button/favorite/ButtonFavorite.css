@@ -1,0 +1,24 @@
+.favorite-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.favorite-button:hover {
+    transform: scale(1.2);
+}
+
+.favorite-button svg {
+    color: gold;
+}
+
+.favorite-button.filled svg {
+    color: gold;
+    filter: drop-shadow(0 0 0 black);
+}
+
+.favorite-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
