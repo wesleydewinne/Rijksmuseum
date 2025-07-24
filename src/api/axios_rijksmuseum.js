@@ -6,6 +6,7 @@ const API_KEY = import.meta.env.VITE_RIJKSMUSEUM_API_KEY;
 const AxiosRijksmuseum = axios.create({
     baseURL: API_BASE_URL,
     headers: {
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     },
 });
